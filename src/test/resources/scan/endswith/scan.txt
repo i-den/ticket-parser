@@ -1,0 +1,3 @@
+/home/daodswnz/public_html/loja/wp-includes/post.php: {HEX}Malware.Expert.generic.hidden.include.2.UNOFFICIAL FOUND
+/home/szhletxb/quarantine_clamavconnector/logs_designerlee.com-Aug-2019.gz: {HEX}Malware.Expert.generic.eval.21.UNOFFICIAL FOUND
+/home/admin/quarantine_clamavconnector/public_html_wp-includes_images_smilies_icon_lols.gif: {HEX}Malware.Expert.generic.com.denchev.malware.41.UNOFFICIAL FOUND

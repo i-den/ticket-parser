@@ -1,0 +1,3 @@
+/home/kxqrfcqa/logs/marylandcollectionagency.net-Jan-2020.gz: {HEX}Malware.Expert.generic.eval.post.0.UNOFFICIAL FOUND
+/home/daodswng/clubeshopee.com.br/wp-content/themes/twentyseventeen/functions.php: {HEX}Malware.Expert.generic.file.get.contents.0.UNOFFICIAL FOUND
+/home/daodswnr/clubeshopee.com.br/wp-includes/wp-vcd.php: {HEX}Malware.Expert.wordpress.file.put.contens.1.UNOFFICIAL FOUND

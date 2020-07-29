@@ -1,0 +1,15 @@
+
+-------------------------------------------------------------------------------
+
+/home/sistecsa/logs/mayacr.sistecsa.com-ssl_log-Jan-2020.gz: {HEX}Malware.Expert.com.denchev.malware.url.hastebin.com.0.UNOFFICIAL FOUND
+/home/smvcutof/logs/maderamansion.mjhlandsolutions.com-Jan-2020.gz: {HEX}Malware.Expert.generic.eval.base64.post.0.UNOFFICIAL FOUND
+
+----------- SCAN SUMMARY -----------
+Known viruses: 6725322
+Engine version: 0.101.4
+Scanned directories: 3584863
+Scanned files: 23203574
+Infected files: 3271
+Data scanned: 782234.85 MB
+Data read: 1642609.28 MB (ratio 0.48:1)
+Time: 183280.025 sec (3054 m 40 s)
