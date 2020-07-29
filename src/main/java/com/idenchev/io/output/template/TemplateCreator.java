@@ -1,20 +1,19 @@
 package com.idenchev.io.output.template;
 
 import com.idenchev.malware.InfectedUser;
-import com.idenchev.malware.InfectedUser;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public abstract class TemplateCreator {
-    protected File defaultTemplateFile;
+    protected InputStream defaultTemplateFileStream;
     protected StringBuilder defaultTemplate;
     FileReplacementStrategyFactory fileReplacementStrategyFactory;
 
-    TemplateCreator(File defaultTemplateFile,  FileReplacementStrategyFactory fileReplacementStrategyFactory) {
-        this.defaultTemplateFile = defaultTemplateFile;
+    TemplateCreator(InputStream defaultTemplateFileStream,  FileReplacementStrategyFactory fileReplacementStrategyFactory) {
+        this.defaultTemplateFileStream = defaultTemplateFileStream;
         this.fileReplacementStrategyFactory = fileReplacementStrategyFactory;
         defaultTemplate = new StringBuilder();
         loadDefaultTemplate();
@@ -23,7 +22,7 @@ public abstract class TemplateCreator {
     public abstract String getReplacedTemplate(InfectedUser infectedUser);
 
     private void loadDefaultTemplate() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(defaultTemplateFile))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(defaultTemplateFileStream))) {
                String line;
                while ((line = reader.readLine()) != null) {
                    defaultTemplate.append(line);

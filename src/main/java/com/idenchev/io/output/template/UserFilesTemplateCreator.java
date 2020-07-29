@@ -2,17 +2,17 @@ package com.idenchev.io.output.template;
 
 import com.idenchev.malware.InfectedUser;
 
-import java.io.File;
+import java.io.InputStream;
 
 public class UserFilesTemplateCreator extends TemplateCreator {
     private String usernameTemplateString;
     private String filesTemplateString;
 
-    public UserFilesTemplateCreator(File defaultTemplateFile,
+    public UserFilesTemplateCreator(InputStream defaultTemplateFileStream,
                                     FileReplacementStrategyFactory fileReplacementStrategyFactory,
                                     String usernameTemplateString,
                                     String filesTemplateString) {
-        super(defaultTemplateFile, fileReplacementStrategyFactory);
+        super(defaultTemplateFileStream, fileReplacementStrategyFactory);
         this.usernameTemplateString = usernameTemplateString;
         this.filesTemplateString = filesTemplateString;
     }
