@@ -1,0 +1,19 @@
+ignoreIfBeginsWithAny:
+  - test1
+  - test2
+  - test3
+
+ignoreIfContainsAny:
+  - test1
+  - test2
+  - test3
+
+ignoreIfEndsWithAny:
+  - test1
+  - test2
+  - test3
+
+ignoreCPanelUsers:
+  - test1
+  - test2
+  - test3

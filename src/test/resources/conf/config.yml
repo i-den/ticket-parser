@@ -1,0 +1,31 @@
+ignoreIfBeginsWithAny:
+  - /.cagefs/
+  - /quarantine_clamavconnector/
+  - /tmp/analog/
+
+ignoreIfContainsAny:
+
+
+ignoreIfEndsWithAny:
+  - .apk
+  - .wpress
+  - .gz
+  - .tgz
+  - .tar.gz
+  - .zip
+  - .exe
+
+ignoreCPanelUsers:
+  - .jbm
+  - solr
+  -
+
+ticketSaveDirectory: scanTickets
+shouldUseFullPath: yes
+
+shouldUsePasteBinSite: yes
+maxScanFiles: 30
+apiKey:
+
+cPanelUserTemplateString: INFECTED_USER_NAME
+cPanelUserMalwareFilesString: INFECTED_USER_ALL_FILES

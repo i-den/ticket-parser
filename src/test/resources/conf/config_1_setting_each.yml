@@ -1,0 +1,18 @@
+ignoreIfBeginsWithAny:
+  - test
+
+ignoreIfContainsAny:
+  - test
+
+ignoreIfEndsWithAny:
+  - test
+
+ignoreCPanelUsers:
+  - test
+
+ticketSaveDirectory: scanTickets
+maxScanFiles: 30
+apiKey: myApiKey
+
+cPanelUserTemplateString: INFECTED_USER_NAME
+cPanelUserMalwareFilesString: INFECTED_USER_ALL_FILES
