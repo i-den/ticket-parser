@@ -64,6 +64,8 @@ The ticket parser does:
  5. Creates a txt file for each user in ticket-parser/src/main/resources/tickets
  
 # How it works
+![parser](https://i.imgur.com/mSP3mbx.jpg)
+
 ### Main Class
  - TicketParserMain creates a new TicketParser and uses its parse() method
  ```java
