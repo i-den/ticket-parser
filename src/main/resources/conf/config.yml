@@ -24,7 +24,7 @@ shouldUseFullPath: yes
 
 shouldUsePasteBinSite: yes
 maxScanFiles: 30
-apiKey: apiKeyHere
+apiKey: awBemaNwcy7etBMwELBvYCjobeoxmoUGKUM50TH7Q
 
 cPanelUserTemplateString: INFECTED_USER_NAME
 cPanelUserMalwareFilesString: INFECTED_USER_ALL_FILES

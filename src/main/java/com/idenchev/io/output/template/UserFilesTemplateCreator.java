@@ -19,9 +19,10 @@ public class UserFilesTemplateCreator extends TemplateCreator {
 
     @Override
     public String getReplacedTemplate(InfectedUser infectedUser) {
+        String template = defaultTemplate.toString();
         FileReplacementStrategy strategy = fileReplacementStrategyFactory.getStrategy(infectedUser);
-        defaultTemplateReplaceAll(usernameTemplateString, infectedUser.getUsername());
-        defaultTemplateReplaceAll(filesTemplateString, strategy.getReplacedFileTemplateString(infectedUser));
-        return defaultTemplate.toString().trim();
+        template = template.replaceAll(usernameTemplateString, infectedUser.getUsername());
+        template = template.replaceAll(filesTemplateString, strategy.getReplacedFileTemplateString(infectedUser));
+        return template.trim();
     }
 }

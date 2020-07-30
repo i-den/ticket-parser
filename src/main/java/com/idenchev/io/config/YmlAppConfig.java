@@ -3,6 +3,7 @@ package com.idenchev.io.config;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -42,25 +43,37 @@ public class YmlAppConfig implements AppConfig {
     @Override
     @SuppressWarnings("unchecked")
     public List<String> getIgnoreIfBeginsWithAnyList() {
-        return  (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_IF_BEGINS_WITH_ANY.configName);
+        List<String> list = (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_IF_BEGINS_WITH_ANY.configName);
+        if (list == null)
+            return new ArrayList<>();
+        return list;
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<String> getIgnoreIfContainsAnyList() {
-        return (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_IF_CONTAINS_ANY.configName);
+        List<String> list = (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_IF_CONTAINS_ANY.configName);
+        if (list == null)
+            return new ArrayList<>();
+        return list;
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<String> getIgnoreIfEndsWithAnyList() {
-        return (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_IF_ENDS_WITH_ANY.configName);
+        List<String> list = (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_IF_ENDS_WITH_ANY.configName);
+        if (list == null)
+            return new ArrayList<>();
+        return list;
     }
 
     @Override
     @SuppressWarnings("unchecked")
     public List<String> getIgnoreCPanelUserList() {
-        return (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_CPANEL_USERS.configName);
+        List<String> list = (List<String>) configMap.get(YmlAppConfigOptions.IGNORE_CPANEL_USERS.configName);
+        if (list == null)
+            return new ArrayList<>();
+        return list;
     }
 
     @Override

@@ -20,6 +20,8 @@ public abstract class TicketParser {
 
     public void parse() {
         Set<InfectedUser> infectedUsers = malwareParser.parseInfectedUsers();
+        output.createTickets(infectedUsers);
+        output.notifyOutcome();
     }
 
     abstract AppConfig makeAppConfig();
