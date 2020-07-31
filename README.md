@@ -2,9 +2,8 @@
 Ticket Parser is a small program to parse monthly server clamscans into separate tickets for each infected cPanel user
 
 ## Requirements
- - Java 8
- - git
- - clamscan file
+ - Java 8 & git installed
+ - network connection to maven central repo
 
 ## Getting Started
  - Pull repo locally
