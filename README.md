@@ -17,7 +17,9 @@ ticket-parser/src/main/resources/scan.txt
 ```
  - Compile using Maven Wrapper and run
 ```bash
-mvnw clean compile assembly:single
+cd ticket-parser
+chmod +x mvnw
+./mvnw clean compile assembly:single
 java -jar target/ticket-parser-1.0-jar-with-dependencies.jar
 ``` 
 
