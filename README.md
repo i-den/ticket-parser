@@ -22,6 +22,11 @@ chmod +x mvnw
 java -jar target/ticket-parser-1.0-jar-with-dependencies.jar
 ``` 
 
+## Running tests
+```bash
+./mvnw test
+```
+
 ## Configuration
 Currently supports yml file configuration
 ```bash

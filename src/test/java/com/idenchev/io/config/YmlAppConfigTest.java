@@ -48,9 +48,9 @@ class YmlAppConfigTest {
 
     // ignoreIfBeginsWithAny
     @Test
-    void givenEmptyIgnoreBeginsList_shouldReturnNull() throws Exception {
+    void givenEmptyIgnoreBeginsList_shouldReturnEmptyList() throws Exception {
         appConfigTestable = new YmlAppConfig(new FileInputStream(getTestableConfigFile("config_empty.yml")));
-        assertNull(appConfigTestable.getIgnoreIfBeginsWithAnyList());
+        assertEquals(appConfigTestable.getIgnoreIfBeginsWithAnyList().size(), 0);
     }
 
     @Test
@@ -74,9 +74,9 @@ class YmlAppConfigTest {
     // ignoreIfBeginsWithAny
     // ignoreIfContainsAny
     @Test
-    void givenEmptyIgnoreContainsList_shouldReturnNull() throws Exception {
+    void givenEmptyIgnoreContainsList_shouldReturnEmptyList() throws Exception {
         appConfigTestable = new YmlAppConfig(new FileInputStream(getTestableConfigFile("config_empty.yml")));
-        assertNull(appConfigTestable.getIgnoreIfContainsAnyList());
+        assertEquals(appConfigTestable.getIgnoreIfContainsAnyList().size(), 0);
     }
 
     @Test
@@ -100,9 +100,9 @@ class YmlAppConfigTest {
     // ignoreIfContainsAny
     // ignoreIfEndsWithAny
     @Test
-    void givenEmptyIgnoreEndsList_shouldReturnNull() throws Exception {
+    void givenEmptyIgnoreEndsList_shouldReturnEmptyList() throws Exception {
         appConfigTestable = new YmlAppConfig(new FileInputStream(getTestableConfigFile("config_empty.yml")));
-        assertNull(appConfigTestable.getIgnoreIfEndsWithAnyList());
+        assertEquals(appConfigTestable.getIgnoreIfEndsWithAnyList().size(), 0);
     }
 
     @Test
@@ -126,9 +126,9 @@ class YmlAppConfigTest {
     // ignoreIfEndsWithAny
     // ignoreCPanelUserList
     @Test
-    void givenEmptyIgnoreCPanelUserList_shouldReturnNull() throws Exception {
+    void givenEmptyIgnoreCPanelUserList_shouldReturnEmptyList() throws Exception {
         appConfigTestable = new YmlAppConfig(new FileInputStream(getTestableConfigFile("config_empty.yml")));
-        assertNull(appConfigTestable.getIgnoreCPanelUserList());
+        assertEquals(appConfigTestable.getIgnoreCPanelUserList().size(), 0);
     }
 
     @Test
